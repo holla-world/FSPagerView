@@ -111,6 +111,8 @@ open class FSPagerView: UIView,UICollectionViewDataSource,UICollectionViewDelega
             self.collectionViewLayout.forceInvalidate()
         }
     }
+    /// 是否仅计算item的偏移 不受缩放的位置偏移(仅处理了type == .liner类型）
+    open var isOnlyOffsetInteritemSpacing: Bool = false
     
     /// The item size of the pager view. When the value of this property is FSPagerView.automaticSize, the items fill the entire visible area of the pager view. Default is FSPagerView.automaticSize.
     @IBInspectable
